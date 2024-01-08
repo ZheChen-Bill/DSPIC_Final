@@ -1,0 +1,287 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Jan  8 12:20:25 2024
+# Process ID: 1631877
+# Current directory: /home/ubuntu/DSPIC_Final/project_2/project_2.runs/synth_1
+# Command line: vivado -log fir.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir.tcl
+# Log file: /home/ubuntu/DSPIC_Final/project_2/project_2.runs/synth_1/fir.vds
+# Journal file: /home/ubuntu/DSPIC_Final/project_2/project_2.runs/synth_1/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 3393.626 MHz, CPU Physical cores: 4, Host memory: 12538 MB
+#-----------------------------------------------------------
+source fir.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2868.422 ; gain = 0.023 ; free physical = 2495 ; free virtual = 8177
+Command: synth_design -top fir -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1631903
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2868.422 ; gain = 0.000 ; free physical = 1715 ; free virtual = 7398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fir' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/fir.v:23]
+INFO: [Synth 8-6157] synthesizing module 'booth' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:23]
+INFO: [Synth 8-226] default block is never used [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:75]
+INFO: [Synth 8-226] default block is never used [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'booth' (0#1) [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fir' (0#1) [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/fir.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2868.422 ; gain = 0.000 ; free physical = 1782 ; free virtual = 7465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2868.422 ; gain = 0.000 ; free physical = 1782 ; free virtual = 7465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2868.422 ; gain = 0.000 ; free physical = 1782 ; free virtual = 7465
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2868.422 ; gain = 0.000 ; free physical = 1778 ; free virtual = 7462
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/DSPIC_Final/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/home/ubuntu/DSPIC_Final/project_1/project_1.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2900.438 ; gain = 0.000 ; free physical = 1683 ; free virtual = 7367
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2900.438 ; gain = 0.000 ; free physical = 1683 ; free virtual = 7366
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1756 ; free virtual = 7439
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1756 ; free virtual = 7439
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1756 ; free virtual = 7439
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'booth'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fir'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                     CAL |                             0010 |                               01
+                   SHIFT |                             0100 |                               10
+                  FINISH |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'booth'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                    INIT |                               01 |                               01
+                   COUNT |                               10 |                               10
+                     OUT |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fir'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1750 ; free virtual = 7434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  19 Input   20 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 38    
+	   2 Input   15 Bit       Adders := 18    
+	   2 Input    6 Bit       Adders := 19    
++---Registers : 
+	               33 Bit    Registers := 19    
+	               32 Bit    Registers := 19    
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 38    
+	               14 Bit    Registers := 37    
+	                6 Bit    Registers := 19    
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 19    
+	   3 Input   33 Bit        Muxes := 19    
+	   4 Input   33 Bit        Muxes := 38    
+	   4 Input   20 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 19    
+	   4 Input    4 Bit        Muxes := 19    
+	   2 Input    4 Bit        Muxes := 38    
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 43    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1717 ; free virtual = 7405
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1591 ; free virtual = 7280
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1584 ; free virtual = 7273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1585 ; free virtual = 7273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1584 ; free virtual = 7272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1584 ; free virtual = 7272
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 1st driver pin 'genblk1[18].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 2nd driver pin 'genblk1[17].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 3rd driver pin 'genblk1[16].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 4th driver pin 'genblk1[15].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 5th driver pin 'genblk1[14].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 6th driver pin 'genblk1[13].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 7th driver pin 'genblk1[12].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 8th driver pin 'genblk1[11].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 9th driver pin 'genblk1[10].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 10th driver pin 'genblk1[9].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 11th driver pin 'genblk1[8].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 12th driver pin 'genblk1[7].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 13th driver pin 'genblk1[6].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 14th driver pin 'genblk1[5].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 15th driver pin 'genblk1[4].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 16th driver pin 'genblk1[3].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 17th driver pin 'genblk1[2].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 18th driver pin 'genblk1[1].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mul_done with 19th driver pin 'genblk1[0].booth_U/done_reg_reg/Q' [/home/ubuntu/DSPIC_Final/project_2/project_2.srcs/sources_1/new/booth.v:71]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1584 ; free virtual = 7272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1584 ; free virtual = 7272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1584 ; free virtual = 7272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1584 ; free virtual = 7272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   255|
+|3     |LUT1   |    19|
+|4     |LUT2   |   712|
+|5     |LUT3   |   238|
+|6     |LUT4   |   246|
+|7     |LUT5   |   371|
+|8     |LUT6   |   325|
+|9     |FDCE   |  1718|
+|10    |FDPE   |    20|
+|11    |IBUF   |    16|
+|12    |OBUF   |    22|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2900.438 ; gain = 32.016 ; free physical = 1584 ; free virtual = 7272
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 19 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 2900.438 ; gain = 0.000 ; free physical = 1640 ; free virtual = 7329
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 2900.445 ; gain = 32.016 ; free physical = 1640 ; free virtual = 7329
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2900.445 ; gain = 0.000 ; free physical = 1732 ; free virtual = 7420
+INFO: [Netlist 29-17] Analyzing 255 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2900.445 ; gain = 0.000 ; free physical = 1675 ; free virtual = 7364
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1656157b
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 1 Warnings, 19 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:55 . Memory (MB): peak = 2900.445 ; gain = 32.023 ; free physical = 1888 ; free virtual = 7577
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/DSPIC_Final/project_2/project_2.runs/synth_1/fir.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fir_utilization_synth.rpt -pb fir_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 12:21:34 2024...
